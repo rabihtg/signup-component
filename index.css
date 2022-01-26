@@ -132,6 +132,30 @@ input:focus {
   outline: none;
   border-color: var(--Blue);
 }
+.left__input-cont {
+  position: relative;
+  display: block;
+}
+.left__input-error-icon {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 100ms ease-in;
+  z-index: 999;
+  right: 0;
+  top: 0;
+  transform: translate(-28px, 60%);
+}
+.left_input-error-msg {
+  display: block;
+  margin: 0 0 30px;
+  font-weight: 400;
+  padding: 0;
+  line-height: 0;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--Red);
+  text-align: right;
+}
 button {
   background-color: var(--Green);
   border: none;
@@ -149,6 +173,13 @@ button:hover,
 button:focus {
   background-color: hsl(154, 59%, 65%);
   outline: none;
+}
+/* ------------------------------------------------ Input Error States  */
+input[aria-invalid="true"] {
+  border: 2px solid var(--Red);
+}
+input[aria-invalid="true"] ~ .left__input-error-icon {
+  opacity: 1;
 }
 .right__terms {
   color: var(--Grayish-Blue);

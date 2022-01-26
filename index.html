@@ -36,30 +36,78 @@
         </p>
         <div class="right__form-cont">
           <form novalidate>
-            <input
-              type="text"
-              name="userName"
-              id="userName"
-              placeholder="First Name"
-            />
-            <input
-              type="text"
-              name="lastName"
-              id="lastName"
-              placeholder="Last Name"
-            />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email Address"
-            />
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Password"
-            />
+            <span class="left__input-cont">
+              <input
+                aria-details="First Name"
+                type="text"
+                name="userName"
+                id="userName"
+                placeholder="First Name"
+                aria-invalid="false"
+                spellcheck="false"
+                autocomplete="off"
+              />
+              <img
+                src="./images/icon-error.svg"
+                alt="error"
+                class="left__input-error-icon"
+              />
+              <span class="left_input-error-msg"></span>
+            </span>
+            <span class="left__input-cont">
+              <input
+                aria-details="Last Name"
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Last Name"
+                aria-invalid="false"
+                spellcheck="false"
+                autocomplete="off"
+              />
+              <img
+                src="./images/icon-error.svg"
+                alt="error"
+                class="left__input-error-icon"
+              />
+              <span class="left_input-error-msg"></span>
+            </span>
+            <span class="left__input-cont">
+              <input
+                aria-details="Email Adress"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                aria-invalid="false"
+                spellcheck="false"
+                autocomplete="off"
+              />
+              <img
+                src="./images/icon-error.svg"
+                alt="error"
+                class="left__input-error-icon"
+              />
+              <span class="left_input-error-msg"> </span>
+            </span>
+            <span class="left__input-cont">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                aria-details="Password"
+                placeholder="Password"
+                aria-invalid="false"
+                spellcheck="false"
+                autocomplete="off"
+              />
+              <img
+                src="./images/icon-error.svg"
+                alt="error"
+                class="left__input-error-icon"
+              />
+              <span class="left_input-error-msg"></span>
+            </span>
             <button type="submit">Claim your free trial</button>
           </form>
           <p class="right__terms">
