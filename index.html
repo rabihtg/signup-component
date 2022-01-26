@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main>
+      <div class="left">
+        <h1 class="left__title">Learn to code by watching others</h1>
+        <p class="left__desc">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="right">
+        <p class="right__offer-box">
+          Try it free 7 days then $20/mo. thereafter
+        </p>
+        <div class="right__form-cont">
+          <form novalidate>
+            <input
+              type="text"
+              name="userName"
+              id="userName"
+              placeholder="First Name"
+              autofocus
+            />
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Last Name"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+            <button type="submit">Claim your free trial</button>
+          </form>
+          <p class="right__terms">
+            By clicking the button, you are agreeing to our
+            <a
+              href="#"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="right__terms-link"
+              >Terms and Services</a
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
