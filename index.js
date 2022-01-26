@@ -13,10 +13,10 @@ userForm.addEventListener("submit", function (e) {
       input.setAttribute("aria-invalid", true);
       input.setAttribute("placeholder", "");
       input.nextElementSibling.nextElementSibling.innerText =
-        input.getAttribute("aria-details") + " cannot be empty";
+        input.getAttribute("data-details") + " cannot be empty";
     } else {
       input.setAttribute("aria-invalid", false);
-      input.setAttribute("placeholder", input.getAttribute("aria-details"));
+      input.setAttribute("placeholder", input.getAttribute("data-details"));
       input.nextElementSibling.nextElementSibling.innerText = "";
     }
   });
@@ -39,7 +39,7 @@ userForm.addEventListener("submit", function (e) {
 userInputs.forEach((input) => {
   input.addEventListener("focus", () => {
     input.setAttribute("aria-invalid", false);
-    input.setAttribute("placeholder", input.getAttribute("aria-details"));
+    input.setAttribute("placeholder", input.getAttribute("data-details"));
     input.nextElementSibling.nextElementSibling.innerText = "";
   });
 });
