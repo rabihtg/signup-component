@@ -1,0 +1,162 @@
+:root {
+  /* Primary */
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  /* Accent */
+  --Blue: hsl(248, 32%, 49%);
+  /* Neutral */
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+  /* FONTS */
+  --ff-sans: "Poppins", Arial, sans-serif;
+}
+
+/* ------------------------------------------------------------------- Resets
+---------------------------------------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+input,
+button,
+textarea {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  font: inherit;
+}
+/* ------------------------------------------------------------------- Global / Main
+---------------------------------------------------------------------------------------------------------- */
+body {
+  width: 90%;
+  max-width: 1150px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 4rem 0 2rem;
+  font-family: var(--ff-sans);
+  background: url(./images/bg-intro-mobile.png), var(--Red);
+}
+@media (min-width: 770px) {
+  body {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background: url(./images/bg-intro-desktop.png), var(--Red);
+  }
+  main {
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+  }
+}
+/* ------------------------------------------------------------------- Left
+---------------------------------------------------------------------------------------------------------- */
+.left {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.left__title {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.75rem;
+  margin: 0;
+  font-weight: 600;
+}
+.left__desc {
+  color: hsl(0, 0%, 90%);
+  font-weight: 400;
+  margin: 0;
+  white-space: pre-line;
+}
+@media (min-width: 770px) {
+  .left {
+    text-align: left;
+    flex-basis: 47%;
+    align-self: center;
+  }
+  .left__title {
+    font-size: 3.1rem;
+    line-height: 1.1;
+    padding: 30px 0;
+  }
+  .left__desc {
+    white-space: initial;
+  }
+}
+/* ------------------------------------------------------------------- Right
+---------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------- Container */
+.right {
+  text-align: center;
+}
+.right__offer-box {
+  border-radius: 10px;
+  font-size: 0.925rem;
+  background-color: var(--Blue);
+  color: hsl(0, 0%, 90%);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem 4rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.right__offer-box-focus {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+}
+@media (min-width: 770px) {
+  .right {
+    flex-basis: 55%;
+  }
+}
+/* --------------------------------------------------- Form */
+.right__form-cont {
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: hsl(0, 0%, 100%);
+}
+input {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--dark-Blue);
+}
+input:hover,
+input:focus {
+  outline: none;
+  border-color: var(--Blue);
+}
+button {
+  background-color: var(--Green);
+  border: none;
+  border-radius: 5px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 0 hsl(154, 59%, 45%);
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 1.25px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+}
+button:hover,
+button:focus {
+  background-color: hsl(154, 59%, 65%);
+  outline: none;
+}
+.right__terms {
+  color: var(--Grayish-Blue);
+  font-size: 0.8rem;
+}
+.right__terms-link {
+  line-height: 2;
+  color: var(--Red);
+  font-weight: 700;
+  text-decoration: none;
+}

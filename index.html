@@ -9,6 +9,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Frontend Mentor | Intro component with sign up form</title>
@@ -25,7 +31,8 @@
       </div>
       <div class="right">
         <p class="right__offer-box">
-          Try it free 7 days then $20/mo. thereafter
+          <span class="right__offer-box-focus">Try it free 7 days</span> then
+          $20/mo. thereafter
         </p>
         <div class="right__form-cont">
           <form novalidate>
@@ -34,7 +41,6 @@
               name="userName"
               id="userName"
               placeholder="First Name"
-              autofocus
             />
             <input
               type="text"
