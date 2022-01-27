@@ -23,8 +23,6 @@ userForm.addEventListener("submit", function (e) {
       input.setAttribute("placeholder", input.getAttribute("data-details"));
       input.nextElementSibling.nextElementSibling.innerText = "";
     }
-
-    console.log(input.value);
   });
   if (userEmailInput.getAttribute("aria-invalid") !== "true") {
     const emailValue = userEmailInput.value;
