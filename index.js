@@ -1,6 +1,8 @@
 // Done - Set max char for each email part
 // Done - Check the problem with regex taking so long to compute on long domain names
 
+// TESTING LAST CHANGER IN GIT.
+
 const userForm = document.querySelector("form");
 const userInputs = document.querySelectorAll("input");
 
